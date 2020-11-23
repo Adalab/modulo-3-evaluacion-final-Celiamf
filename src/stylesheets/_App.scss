@@ -1,0 +1,17 @@
+.App {
+  background-color: #1d1b1c;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+.header {
+  height: fit-content;
+  &__logo {
+    width: 50%;
+    margin-top: 36px;
+  }
+}

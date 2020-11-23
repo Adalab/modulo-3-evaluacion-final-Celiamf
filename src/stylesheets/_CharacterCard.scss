@@ -1,0 +1,21 @@
+.card {
+  width: 170px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 6px;
+  padding: 6px;
+  list-style-type: none;
+  &__info {
+    background-color: #10aac2;
+    padding: 6px;
+  }
+  &__img {
+    width: 100%;
+  }
+}
+
+.card:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
