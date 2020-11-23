@@ -7,8 +7,8 @@ const CharacterCard = () => {
       <li className="card">
         <img src={logo} alt="" className="card__img" />
         <main className="card__info">
-          <h2>Fake H2</h2>
-          <p>Fake p</p>
+          <h3>Nombre</h3>
+          <p>Especie</p>
         </main>
       </li>
     </>

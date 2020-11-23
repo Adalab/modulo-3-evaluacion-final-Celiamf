@@ -1,9 +1,12 @@
-import "../stylesheets/_App.scss";
+import "../stylesheets/_CharacterList.scss";
 import CharacterCard from "./CharacterCard";
 
 const CharacterList = () => {
   return (
     <ul className="cardList">
+      <CharacterCard></CharacterCard>
+      <CharacterCard></CharacterCard>
+      <CharacterCard></CharacterCard>
       <CharacterCard></CharacterCard>
     </ul>
   );
