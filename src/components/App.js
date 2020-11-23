@@ -8,6 +8,7 @@ import getDataFromAPI from "../services/getDataFromAPI";
 
 function App() {
   const [chars, setChars] = useState([]);
+  const [nameFilter, setNameFilter] = useState("");
 
   useEffect(() => {
     getDataFromAPI().then((data) => {
@@ -15,14 +16,22 @@ function App() {
     });
   }, []);
 
+  const handleFilter = (inputValue) => {
+    setNameFilter(inputValue);
+  };
+
+  const filteredChars = chars.filter((char) => {
+    return char.name.toUpperCase().includes(nameFilter.toUpperCase());
+  });
+
   return (
     <div className="App">
       <header className="header">
         <img src={logo} className="header__logo" alt="Rick and Morty logo" />
       </header>
       <main>
-        <Filters></Filters>
-        <CharacterList chars={chars}></CharacterList>
+        <Filters handleFilter={handleFilter}></Filters>
+        <CharacterList chars={filteredChars}></CharacterList>
         <CharacterDetail></CharacterDetail>
       </main>
     </div>

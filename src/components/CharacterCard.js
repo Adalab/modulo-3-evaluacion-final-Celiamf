@@ -1,7 +1,6 @@
 import "../stylesheets/_CharacterCard.scss";
 
 const CharacterCard = (props) => {
-  console.log(props.id);
   return (
     <>
       <li className="card">
