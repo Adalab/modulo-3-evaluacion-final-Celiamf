@@ -21,9 +21,9 @@ function App() {
         <img src={logo} className="header__logo" alt="Rick and Morty logo" />
       </header>
       <main>
+        <Filters></Filters>
         <CharacterList chars={chars}></CharacterList>
         <CharacterDetail></CharacterDetail>
-        <Filters></Filters>
       </main>
     </div>
   );

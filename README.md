@@ -1,10 +1,10 @@
-# ADALAB - Promo Kizzy - Módulo 3 React - Ejercicio de evaluación intermedia
+# ADALAB - Promo Kizzy - Módulo 3 React - Ejercicio de evaluación final
 
 ## Celia MF
 
 ¡Hola, visitante!
 
-Esta página ha sido creada como ejercicio de evaluación intermedia del tercer módulo del curso de programación web de ADALAB, dedicado a la creación de web apps en **React**.
+Esta página ha sido creada como ejercicio de evaluación final del tercer módulo del curso de programación web de ADALAB, dedicado a la creación de web apps en **React**.
 
 Desde **[aquí](http://beta.adalab.es/modulo-3-evaluacion-final-Celiamf/)** puedes acceder un listado de personajes de Rick and Morty obtenido de **[este API](https://rickandmortyapi.com/documentation/#get-all-characters)**.
 
