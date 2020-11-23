@@ -1,14 +1,14 @@
 import "../stylesheets/_CharacterCard.scss";
-import logo from "../images/logo_header.png";
 
-const CharacterCard = () => {
+const CharacterCard = (props) => {
+  console.log(props.id);
   return (
     <>
       <li className="card">
-        <img src={logo} alt="" className="card__img" />
+        <img src={props.img} alt={props.name} className="card__img" />
         <main className="card__info">
-          <h3>Nombre</h3>
-          <p>Especie</p>
+          <h3>{props.name}</h3>
+          <p>{props.species}</p>
         </main>
       </li>
     </>
