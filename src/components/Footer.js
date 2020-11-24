@@ -9,6 +9,7 @@ const Footer = () => {
         <a
           href="https://rickandmortyapi.com"
           target="_blank"
+          rel="noreferrer"
           className="footer__link"
           title="Go to Rick and Morty API"
           aria-label="Go to Rick and Morty API"
@@ -21,6 +22,7 @@ const Footer = () => {
         <a
           href="https://github.com/Celiamf"
           target="_blank"
+          rel="noreferrer"
           className="footer__link--github"
           title="Go to Celia's Github profile"
           aria-label="Go to Celia's Github profile"
@@ -31,6 +33,7 @@ const Footer = () => {
       <a
         href="https://beta.adalab.es/project-promo-k-modulo-1-team-3/"
         target="_blank"
+        rel="noreferrer"
         title="Go to Las Chicas del Coding website"
         aria-label="Go to Las Chicas del Coding website"
       >
