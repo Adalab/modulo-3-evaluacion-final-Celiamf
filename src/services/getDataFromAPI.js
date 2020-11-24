@@ -6,8 +6,8 @@ const getDataFromAPI = () => {
     .then((data) => {
       return data.results.map((character) => {
         return {
-          id: character.id,
           name: character.name,
+          id: character.id,
           img: character.image,
           status: character.status,
           species: character.species,

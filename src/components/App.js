@@ -2,8 +2,8 @@ import { React, useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import "../stylesheets/_App.scss";
 import Header from "./Header";
-import CharacterList from "./CharacterList";
 import Filter from "./Filter";
+import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
 import getDataFromAPI from "../services/getDataFromAPI";
 
@@ -28,7 +28,7 @@ function App() {
   const renderCharDetail = (props) => {
     const charId = parseInt(props.match.params.id);
     const foundChar = chars.find((char) => {
-      return char.id == charId;
+      return char.id === charId;
     });
     return <CharacterDetail char={foundChar} />;
   };

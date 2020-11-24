@@ -16,7 +16,7 @@ const Filter = (props) => {
         name="searchBox"
         id="searchBox"
         className="searchBox"
-        placeholder="Type any character's name"
+        placeholder="Type a character's name"
         onChange={handleInputChange}
       />
     </form>
