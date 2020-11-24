@@ -7,3 +7,15 @@
   border: solid 3px #10aac2;
   background-color: #1d1b1c;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #1d1b1c inset;
+  box-shadow: 0 0 0 30px #1d1b1c inset;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: whitesmoke;
+}
