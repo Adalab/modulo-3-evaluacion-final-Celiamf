@@ -35,7 +35,7 @@ const CharacterDetail = (props) => {
             <h3 className="detail__info__name">{props.char.name}</h3>
             <p className="detail__info__attribute">
               <span className="detail__info__title">Status: </span>{" "}
-              {DeadOrAliveIcon(props)}
+              {props.char.status} {DeadOrAliveIcon(props)}
             </p>
             <p className="detail__info__attribute">
               <span className="detail__info__title">Species: </span>{" "}

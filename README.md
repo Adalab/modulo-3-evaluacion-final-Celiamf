@@ -14,4 +14,4 @@ Este proyecto ha sido creado utilizando **[React](https://github.com/facebook/cr
 
 ¡Gracias por tu visita y PR para sugerencias o mejoras!
 
-<sub>Dead or Alive & Happy face icons by Alfredo @ IconsAlfredo.com from the [Noun Project](https://thenounproject.com/).<sub>
+<sub>Dead or Alive & Happy face icons by Alfredo @ IconsAlfredo.com and Question icon by Stan Diers, from the [Noun Project](https://thenounproject.com/).<sub>
