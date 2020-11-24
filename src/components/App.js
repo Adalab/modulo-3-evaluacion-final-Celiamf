@@ -1,9 +1,10 @@
 import { React, useEffect, useState } from "react";
+import { Switch, Route } from "react-router-dom";
 import logo from "../images/logo_header.png";
 import "../stylesheets/_App.scss";
 import CharacterList from "./CharacterList";
+import Filter from "./Filter";
 import CharacterDetail from "./CharacterDetail";
-import Filters from "./Filters";
 import getDataFromAPI from "../services/getDataFromAPI";
 
 function App() {
@@ -24,15 +25,27 @@ function App() {
     return char.name.toUpperCase().includes(nameFilter.toUpperCase());
   });
 
+  const renderCharDetail = (props) => {
+    const charId = props.match.params.id.parseInt;
+    const foundChar = chars.find((char) => {
+      return char.id.parseInt === charId;
+    });
+    return <CharacterDetail char={foundChar} />;
+  };
+
   return (
     <div className="App">
       <header className="header">
         <img src={logo} className="header__logo" alt="Rick and Morty logo" />
       </header>
       <main>
-        <Filters handleFilter={handleFilter}></Filters>
-        <CharacterList chars={filteredChars}></CharacterList>
-        <CharacterDetail></CharacterDetail>
+        <Switch>
+          <Route exact path="/">
+            <Filter handleFilter={handleFilter} />
+            <CharacterList chars={filteredChars} />
+          </Route>
+          <Route exact path="/char/:id" render={renderCharDetail} />
+        </Switch>
       </main>
     </div>
   );

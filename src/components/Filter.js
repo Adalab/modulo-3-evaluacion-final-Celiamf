@@ -1,11 +1,16 @@
 import "../stylesheets/_Filters.scss";
 
-const Filters = (props) => {
+const Filter = (props) => {
   const handleInputChange = (event) => {
     props.handleFilter(event.target.value);
   };
+
+  const handleFormSubmit = (event) => {
+    event.preventDefault();
+  };
+
   return (
-    <form>
+    <form onSubmit={handleFormSubmit}>
       <input
         type="text"
         name="searchBox"
@@ -18,4 +23,4 @@ const Filters = (props) => {
   );
 };
 
-export default Filters;
+export default Filter;
