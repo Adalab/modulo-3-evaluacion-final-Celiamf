@@ -6,8 +6,7 @@ const CharacterDetail = (props) => {
   if (props.char === undefined) {
     return (
       <>
-        <Link to="" className="detailLink">
-          {" "}
+        <Link to="/" className="detailLink">
           &lt; Back to the list
         </Link>
         <article className="detail">
@@ -19,7 +18,6 @@ const CharacterDetail = (props) => {
     return (
       <>
         <Link to="" className="detailLink">
-          {" "}
           &lt; Back to the list
         </Link>
         <article className="detail">

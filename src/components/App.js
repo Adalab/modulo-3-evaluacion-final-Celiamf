@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import logo from "../images/logo_header.png";
 import "../stylesheets/_App.scss";
+import Header from "./Header";
 import CharacterList from "./CharacterList";
 import Filter from "./Filter";
 import CharacterDetail from "./CharacterDetail";
@@ -35,13 +35,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App__header">
-        <img
-          src={logo}
-          className="App__header__logo"
-          alt="Rick and Morty logo"
-        />
-      </header>
+      <Header />
       <main className="App__main">
         <Switch>
           <Route exact path="/">
