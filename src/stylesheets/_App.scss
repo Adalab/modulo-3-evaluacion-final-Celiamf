@@ -6,12 +6,16 @@
   align-items: center;
   text-align: center;
   color: whitesmoke;
-}
-
-.header {
-  height: fit-content;
-  &__logo {
-    width: 60%;
-    margin-top: 36px;
+  &__header {
+    height: fit-content;
+    &__logo {
+      width: 60%;
+      margin-top: 36px;
+    }
+  }
+  &__main {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
 }

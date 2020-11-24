@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../stylesheets/_CharacterDetail.scss";
 
 const CharacterDetail = (props) => {
   console.log(props, "CharacterDetail props");
@@ -27,16 +28,24 @@ const CharacterDetail = (props) => {
             alt={props.char.name}
             className="detail__img"
           />
-          <div className="detail_info">
-            <h3 className="detail_info--name">{props.char.name}</h3>
-            <p className="detail_info--item">Status:</p>
-            <span>{props.char.status}</span>
-            <p className="detail_info--item">Species:</p>
-            <span>{props.char.species}</span>
-            <p className="detail_info--item">Origin:</p>
-            <span>{props.char.origin}</span>
-            <p className="detail_info--item">No. of pisodes:</p>
-            <span>{props.char.episodes}</span>
+          <div className="detail__info">
+            <h3 className="detail__info__name">{props.char.name}</h3>
+            <p className="detail__info__attribute">
+              <span className="detail__info__title">Status: </span>{" "}
+              {props.char.status}
+            </p>
+            <p className="detail__info__attribute">
+              <span className="detail__info__title">Species: </span>{" "}
+              {props.char.species}
+            </p>
+            <p className="detail__info__attribute">
+              <span className="detail__info__title">Origin: </span>{" "}
+              {props.char.origin}
+            </p>
+            <p className="detail__info__attribute">
+              <span className="detail__info__title">No. of pisodes: </span>{" "}
+              {props.char.episodes}
+            </p>
           </div>
         </article>
       </>

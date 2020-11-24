@@ -27,9 +27,7 @@ function App() {
 
   const renderCharDetail = (props) => {
     const charId = parseInt(props.match.params.id);
-    console.log(charId, "charID");
     const foundChar = chars.find((char) => {
-      console.log(char.id, "char.id");
       return char.id == charId;
     });
     return <CharacterDetail char={foundChar} />;
@@ -37,10 +35,14 @@ function App() {
 
   return (
     <div className="App">
-      <header className="header">
-        <img src={logo} className="header__logo" alt="Rick and Morty logo" />
+      <header className="App__header">
+        <img
+          src={logo}
+          className="App__header__logo"
+          alt="Rick and Morty logo"
+        />
       </header>
-      <main>
+      <main className="App__main">
         <Switch>
           <Route exact path="/">
             <Filter handleFilter={handleFilter} />
