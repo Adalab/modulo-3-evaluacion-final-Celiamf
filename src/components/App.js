@@ -6,10 +6,23 @@ import Filter from "./Filter";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
 import getDataFromAPI from "../services/getDataFromAPI";
+import Footer from "./Footer";
 
 function App() {
   const [chars, setChars] = useState([]);
   const [nameFilter, setNameFilter] = useState("");
+
+  chars.sort(function (a, b) {
+    const charA = a.name.toUpperCase();
+    const charB = b.name.toUpperCase();
+    if (charA < charB) {
+      return -1;
+    }
+    if (charA > charB) {
+      return 1;
+    }
+    return 0;
+  });
 
   useEffect(() => {
     getDataFromAPI().then((data) => {
@@ -45,6 +58,7 @@ function App() {
           <Route exact path="/char/:id" render={renderCharDetail} />
         </Switch>
       </main>
+      <Footer />
     </div>
   );
 }
