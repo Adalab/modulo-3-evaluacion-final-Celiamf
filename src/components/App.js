@@ -26,9 +26,11 @@ function App() {
   });
 
   const renderCharDetail = (props) => {
-    const charId = props.match.params.id.parseInt;
+    const charId = parseInt(props.match.params.id);
+    console.log(charId, "charID");
     const foundChar = chars.find((char) => {
-      return char.id.parseInt === charId;
+      console.log(char.id, "char.id");
+      return char.id == charId;
     });
     return <CharacterDetail char={foundChar} />;
   };
