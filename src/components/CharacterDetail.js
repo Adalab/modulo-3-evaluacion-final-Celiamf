@@ -17,7 +17,7 @@ const CharacterDetail = (props) => {
   } else
     return (
       <>
-        <Link to="" className="detailLink">
+        <Link to="/" className="detailLink">
           &lt; Back to the list
         </Link>
         <article className="detail">

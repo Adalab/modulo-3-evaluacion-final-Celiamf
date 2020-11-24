@@ -1,9 +1,10 @@
 import "../stylesheets/_CharacterList.scss";
+import SearchError from "./SearchError";
 import CharacterCard from "./CharacterCard";
 
 const CharacterList = (props) => {
   if (props.chars.length === 0) {
-    return <p>Sorry, your search did not match any character in our list.</p>;
+    return <SearchError />;
   } else {
     const charItems = props.chars.map((char) => {
       return (
