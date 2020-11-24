@@ -6,8 +6,8 @@
   background-color: #10aac2;
   display: flex;
   align-items: center;
-  width: 560px;
-  padding: 36px;
+  width: 620px;
+  padding: 36px 12px 36px 36px;
   &__img {
     width: 230px;
   }
@@ -17,6 +17,7 @@
     margin: 0;
     &__name {
       margin-top: 0;
+      font-size: 24px;
     }
     &__attribute {
       margin: 6px 0;
@@ -25,36 +26,4 @@
       font-weight: bold;
     }
   }
-}
-
-// &__info {
-//   display: flex;
-//   flex-direction: column;
-//   width: 360px;
-//   &__item {
-//     display: flex;
-//     flex-direction: row;
-//   }
-// }
-
-.card {
-  width: 260px;
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-  margin: 6px;
-  padding: 6px;
-  list-style-type: none;
-  &__info {
-    background-color: #10aac2;
-    padding-left: 6px;
-  }
-  &__img {
-    width: 100%;
-  }
-}
-
-.card:hover {
-  cursor: pointer;
-  transform: scale(1.1);
 }
