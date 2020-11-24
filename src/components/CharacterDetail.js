@@ -6,7 +6,12 @@ const CharacterDetail = (props) => {
   if (props.char === undefined) {
     return (
       <>
-        <Link to="/" className="detailLink">
+        <Link
+          to="/"
+          className="detailLink"
+          aria-label="Go back to the list"
+          title="Go back to the list"
+        >
           &lt; Back to the list
         </Link>
         <article className="detail">
