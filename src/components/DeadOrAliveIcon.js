@@ -15,7 +15,7 @@ const DeadOrAliveIcon = (props) => {
     return (
       <img
         src={unknown_icon}
-        alt="Unknown emoji"
+        alt="Question mark emoji"
         className="statusIcon__unknown"
       />
     );

@@ -10,7 +10,6 @@
     min-height: 102px;
     background-color: #10aac2;
     padding: 18px 6px 18px 18px;
-
     &--name {
       padding-bottom: 3px;
     }
@@ -18,9 +17,8 @@
   &__img {
     width: 100%;
   }
-}
-
-.card:hover {
-  cursor: pointer;
-  transform: scale(1.1);
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+  }
 }
