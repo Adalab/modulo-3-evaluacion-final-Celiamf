@@ -1,31 +1,21 @@
-import { Link } from "react-router-dom";
 import DeadOrAliveIcon from "./DeadOrAliveIcon";
+import BackToListLink from "./BackToListLink";
 import PropTypes from "prop-types";
+import RouteError from "./RouteError";
 import "../stylesheets/_CharacterDetail.scss";
 
 const CharacterDetail = (props) => {
   if (props.char === undefined) {
     return (
       <>
-        <Link
-          to="/"
-          className="detailLink"
-          aria-label="Go back to the list"
-          title="Go back to the list"
-        >
-          &lt; Back to the list
-        </Link>
-        <article className="detail">
-          <p>No character was found. Sorry!</p>
-        </article>
+        <BackToListLink />
+        <RouteError />
       </>
     );
   } else
     return (
       <>
-        <Link to="/" className="detailLink">
-          &lt; Back to the list
-        </Link>
+        <BackToListLink />
         <article className="detail">
           <img
             src={props.char.img}
@@ -58,9 +48,9 @@ const CharacterDetail = (props) => {
 
 CharacterDetail.propTypes = {
   char: PropTypes.object,
-  img: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  status: PropTypes.string.isRequired,
+  img: PropTypes.string,
+  name: PropTypes.string,
+  status: PropTypes.string,
   species: PropTypes.string,
   origin: PropTypes.string,
   episodes: PropTypes.number,
