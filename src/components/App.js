@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <main className="App__main">
+      <main>
         <Switch>
           <Route exact path="/">
             <Filter handleFilter={handleFilter} />
