@@ -1,12 +1,12 @@
 import { React, useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import "../stylesheets/_App.scss";
+import getDataFromAPI from "../services/getDataFromAPI";
 import Header from "./Header";
 import Filter from "./Filter";
 import CharacterList from "./CharacterList";
 import CharacterDetail from "./CharacterDetail";
-import getDataFromAPI from "../services/getDataFromAPI";
 import Footer from "./Footer";
+import "../stylesheets/_App.scss";
 
 function App() {
   const [chars, setChars] = useState([]);

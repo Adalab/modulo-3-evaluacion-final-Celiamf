@@ -1,11 +1,14 @@
 .searchBox {
-  padding: 6px 8px;
+  width: 60%;
+  border: solid 3px #10aac2;
   margin: 32px 0;
-  width: 360px;
+  padding: 6px 8px;
   font-size: 18px;
   color: whitesmoke;
-  border: solid 3px #10aac2;
   background-color: #1d1b1c;
+  @media all and (max-width: 767px) {
+    width: 260px;
+  }
 }
 
 input:-webkit-autofill,

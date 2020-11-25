@@ -1,7 +1,11 @@
 .header {
+  width: 100%;
   height: fit-content;
   &__logo {
-    width: 60%;
+    width: 40%;
     margin-top: 36px;
+    @media all and (max-width: 767px) {
+      width: 260px;
+    }
   }
 }

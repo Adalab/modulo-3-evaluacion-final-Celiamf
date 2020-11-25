@@ -1,4 +1,7 @@
 .searchErrorText {
   margin-top: 36px;
   font-size: 24px;
+  @media all and (max-width: 767px) {
+    width: 260px;
+  }
 }

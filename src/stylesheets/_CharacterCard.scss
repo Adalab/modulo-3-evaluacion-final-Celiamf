@@ -7,8 +7,10 @@
   padding: 6px;
   list-style-type: none;
   &__info {
+    min-height: 102px;
     background-color: #10aac2;
     padding: 18px 6px 18px 18px;
+
     &--name {
       padding-bottom: 3px;
     }
