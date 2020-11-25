@@ -34,6 +34,12 @@ function App() {
     setNameFilter(inputValue);
   };
 
+  const renderUnfilteredList = () => {
+    console.log(chars, "chars");
+    console.log(<CharacterList chars={chars} />);
+    return <CharacterList chars={chars} />;
+  };
+
   const filteredChars = chars.filter((char) => {
     return char.name.toUpperCase().includes(nameFilter.toUpperCase());
   });
@@ -48,7 +54,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header renderUnfilteredList={renderUnfilteredList} />
       <main className="App__main">
         <Switch>
           <Route exact path="/">
