@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import DeadOrAliveIcon from "./DeadOrAliveIcon";
+import PropTypes from "prop-types";
 import "../stylesheets/_CharacterDetail.scss";
 
 const CharacterDetail = (props) => {
@@ -53,6 +54,16 @@ const CharacterDetail = (props) => {
         </article>
       </>
     );
+};
+
+CharacterDetail.propTypes = {
+  char: PropTypes.object,
+  img: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  status: PropTypes.string.isRequired,
+  species: PropTypes.string,
+  origin: PropTypes.string,
+  episodes: PropTypes.number,
 };
 
 export default CharacterDetail;

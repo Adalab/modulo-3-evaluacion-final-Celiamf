@@ -1,6 +1,7 @@
 import alive_icon from "../images/alive_icon.png";
 import dead_icon from "../images/dead_icon.png";
 import unknown_icon from "../images/unknown_icon.png";
+import PropTypes from "prop-types";
 import "../stylesheets/_DeadOrAliveIcon.scss";
 
 const DeadOrAliveIcon = (props) => {
@@ -19,6 +20,10 @@ const DeadOrAliveIcon = (props) => {
         className="statusIcon__unknown"
       />
     );
+};
+
+DeadOrAliveIcon.propTypes = {
+  char: PropTypes.object.isRequired,
 };
 
 export default DeadOrAliveIcon;
