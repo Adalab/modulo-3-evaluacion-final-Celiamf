@@ -11,6 +11,7 @@ import "../stylesheets/_App.scss";
 function App() {
   const [chars, setChars] = useState([]);
   const [nameFilter, setNameFilter] = useState("");
+  const [statusFilter, setStatusFilter] = useState("all");
 
   chars.sort(function (a, b) {
     const charA = a.name.toUpperCase();
@@ -30,13 +31,19 @@ function App() {
     });
   }, []);
 
-  const handleFilter = (inputValue) => {
-    setNameFilter(inputValue);
+  const handleFilter = (filterData) => {
+    if (filterData.key === "searchBox") setNameFilter(filterData.value);
+    else if (filterData.key === "status") setStatusFilter(filterData.value);
   };
 
-  const filteredChars = chars.filter((char) => {
-    return char.name.toUpperCase().includes(nameFilter.toUpperCase());
-  });
+  const filteredChars = chars
+    .filter((char) => {
+      return char.name.toUpperCase().includes(nameFilter.toUpperCase());
+    })
+    .filter((char) => {
+      if (statusFilter === "all") return char;
+      else return char.status === statusFilter;
+    });
 
   const renderCharDetail = (props) => {
     const charId = parseInt(props.match.params.id);

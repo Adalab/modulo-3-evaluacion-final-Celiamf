@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import "../stylesheets/_CharacterCard.scss";
 
 const CharacterCard = (props) => {
+  console.log(props);
   return (
     <>
       <Link to={`/char/${props.id}`}>
@@ -11,6 +12,7 @@ const CharacterCard = (props) => {
           <main className="card__info">
             <h3 className="card__info--name">{props.name}</h3>
             <p>{props.species}</p>
+            <p>{props.status}</p>
           </main>
         </li>
       </Link>
