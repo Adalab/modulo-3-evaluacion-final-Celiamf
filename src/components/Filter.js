@@ -31,10 +31,10 @@ const Filter = (props) => {
         id="status"
         onChange={handleInputChange}
       >
-        <option value="all">all</option>
-        <option value="Alive">alive</option>
-        <option value="Dead">dead</option>
-        <option value="unknown">unknown</option>
+        <option value="all">All</option>
+        <option value="Alive">Alive</option>
+        <option value="Dead">Dead</option>
+        <option value="unknown">Unknown</option>
       </select>
     </form>
   );

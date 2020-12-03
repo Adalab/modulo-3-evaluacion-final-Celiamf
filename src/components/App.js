@@ -13,6 +13,12 @@ function App() {
   const [nameFilter, setNameFilter] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
 
+  useEffect(() => {
+    getDataFromAPI().then((data) => {
+      setChars(data);
+    });
+  }, []);
+
   chars.sort(function (a, b) {
     const charA = a.name.toUpperCase();
     const charB = b.name.toUpperCase();
@@ -25,15 +31,13 @@ function App() {
     return 0;
   });
 
-  useEffect(() => {
-    getDataFromAPI().then((data) => {
-      setChars(data);
-    });
-  }, []);
-
   const handleFilter = (filterData) => {
     if (filterData.key === "searchBox") setNameFilter(filterData.value);
     else if (filterData.key === "status") setStatusFilter(filterData.value);
+  };
+
+  const renderUnfilteredList = () => {
+    setNameFilter("");
   };
 
   const filteredChars = chars
@@ -55,12 +59,12 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Header renderUnfilteredList={renderUnfilteredList} />
       <main>
         <Switch>
           <Route exact path="/">
             <Filter handleFilter={handleFilter} />
-            <CharacterList chars={filteredChars} />
+            <CharacterList filteredChars={filteredChars} />
           </Route>
           <Route exact path="/char/:id" render={renderCharDetail} />
         </Switch>

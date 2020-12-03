@@ -2,9 +2,9 @@ import alive_icon from "../images/alive_icon.png";
 import dead_icon from "../images/dead_icon.png";
 import unknown_icon from "../images/unknown_icon.png";
 import PropTypes from "prop-types";
-import "../stylesheets/_DeadOrAliveIcon.scss";
+import "../stylesheets/_StatusIcon.scss";
 
-const DeadOrAliveIcon = (props) => {
+const StatusIcon = (props) => {
   if (props.char.status === "Alive")
     return (
       <img src={alive_icon} alt="Happy face emoji" className="statusIcon" />
@@ -21,8 +21,8 @@ const DeadOrAliveIcon = (props) => {
     );
 };
 
-DeadOrAliveIcon.propTypes = {
+StatusIcon.propTypes = {
   char: PropTypes.object.isRequired,
 };
 
-export default DeadOrAliveIcon;
+export default StatusIcon;

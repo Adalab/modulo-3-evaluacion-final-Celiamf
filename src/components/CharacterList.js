@@ -4,10 +4,10 @@ import PropTypes from "prop-types";
 import "../stylesheets/_CharacterList.scss";
 
 const CharacterList = (props) => {
-  if (props.chars.length === 0) {
+  if (props.filteredChars.length === 0) {
     return <SearchError />;
   } else {
-    const charItems = props.chars.map((char) => {
+    const charItems = props.filteredChars.map((char) => {
       return (
         <CharacterCard
           key={char.id}

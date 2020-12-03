@@ -1,4 +1,4 @@
-import DeadOrAliveIcon from "./DeadOrAliveIcon";
+import StatusIcon from "./StatusIcon";
 import BackToListLink from "./BackToListLink";
 import PropTypes from "prop-types";
 import RouteError from "./RouteError";
@@ -26,7 +26,7 @@ const CharacterDetail = (props) => {
             <h3 className="detail__info__name">{props.char.name}</h3>
             <p className="detail__info__attribute">
               <span className="detail__info__title">Status: </span>{" "}
-              {props.char.status} {DeadOrAliveIcon(props)}
+              {props.char.status} {StatusIcon(props)}
             </p>
             <p className="detail__info__attribute">
               <span className="detail__info__title">Species: </span>{" "}
