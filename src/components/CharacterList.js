@@ -24,7 +24,7 @@ const CharacterList = (props) => {
 };
 
 CharacterList.propTypes = {
-  chars: PropTypes.array.isRequired,
+  filteredChars: PropTypes.array.isRequired,
 };
 
 export default CharacterList;

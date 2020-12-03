@@ -38,6 +38,7 @@ function App() {
 
   const renderUnfilteredList = () => {
     setNameFilter("");
+    setStatusFilter("all");
   };
 
   const filteredChars = chars
