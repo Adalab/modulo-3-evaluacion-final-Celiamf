@@ -1,18 +1,41 @@
-## ADALAB - Promo Kizzy - Módulo 3 React - Ejercicio de evaluación final
+## Rick & Morty Search App
 
-## Celia MF
+> By Celia, [@adalab](https://github.com/Adalab), Promo Kizzy 2020
 
-¡Hola, visitante!
+¡Hello, visitor!
 
-Esta página ha sido creada como ejercicio de evaluación final del tercer módulo del curso de programación web de ADALAB, dedicado a la creación de web apps en **React**.
+Welcome to the **Rick & Morthy Search App**. This responsive search app will allows you to find info about some of your favorite characters from the Rick & Morty show. It was developed under the Adalab Bootcamp Module 3 on **React** (Kizzy Promotion, sept-dec 2020).
+Click [here](https://celiamf.github.io/rick-and-morty-search-react-app/#/) to start using the app!
 
-Desde **[aquí](http://beta.adalab.es/modulo-3-evaluacion-final-Celiamf/)** puedes acceder a un listado de personajes de Rick and Morty obtenido de **[este API](https://rickandmortyapi.com/documentation/#get-all-characters)**.
+## Developing
 
-Si escribes en el campo de texto podrás **buscar personajes** por nombre. La búsqueda no distingue entre mayúsculas y minúsculas. Puedes hacer clic en cualquiera de los personajes para acceder a una tarjeta con más información.
+Clone this repo if you wish to work with the code:
 
-Este proyecto ha sido creado utilizando **[React](https://github.com/facebook/create-react-app), React-Router, Proptypes y SASS**, así que para arrancarlo, utiliza los comandos `npm install` y luego `npm start`.
+```shell
+git clone https://github.com/Celiamf/rick-and-morty-search-react-app.git
+cd rick-and-morty-search-react-app/
+```
 
-¡Gracias por tu visita y PR para sugerencias o mejoras!
+## Installing / Getting started
 
-<sub>Dead or Alive & Happy face icons by Alfredo @ IconsAlfredo.com and Question icon by Stan Diers, from the [Noun Project](https://thenounproject.com/) || Favicon by [@deliriocolorista](https://www.domestika.org/es/deliriocolorista).
-<sub>
+This project was developed using **[React](https://github.com/facebook/create-react-app), React-Router, Proptypes y SASS**. Run the following commands in your terminal in order to get it up and running.
+
+```shell
+npm install
+npm start
+```
+
+## Features
+
+- The character list displayed is taken from **[this Rick & Morty API](https://rickandmortyapi.com/documentation/#get-all-characters)**.
+- You may type a character name to filter the list results.
+- Use the available filters to narrow your search.
+- If you click on a character, you will navigate to a detailed card including further info.
+
+## Recognition
+
+Dead or Alive & Happy face icons by Alfredo @ IconsAlfredo.com and Question Mark icon by Stan Diers, all from the [Noun Project](https://thenounproject.com/) || Favicon by [@deliriocolorista](https://www.domestika.org/es/deliriocolorista).
+
+## Licensing
+
+The code in this project is licensed under MIT license.
