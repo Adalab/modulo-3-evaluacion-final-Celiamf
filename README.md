@@ -2,6 +2,8 @@
 
 > By Celia, [@adalab](https://github.com/Adalab), Promo Kizzy 2020
 
+![alt text](https://github.com/Celiamf/rick-and-morty-search-react-app/blob/master/src/images/Search_App_Screenshot.png?raw=true)
+
 ¡Hello, visitor!
 
 Welcome to the **Rick & Morthy Search App**. This responsive search app will allows you to find info about some of your favorite characters from the Rick & Morty show. It was developed under the Adalab Bootcamp Module 3 on **React** (Kizzy Promotion, sept-dec 2020).
