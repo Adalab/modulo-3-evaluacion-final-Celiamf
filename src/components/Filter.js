@@ -22,34 +22,36 @@ const Filter = (props) => {
         placeholder="Type a character's name"
         onChange={handleInputChange}
       />
-      <label className="statusLabel" htmlFor="status">
-        Status
-      </label>
-      <select
-        className="statusSelect"
-        name="status"
-        id="status"
-        onChange={handleInputChange}
-      >
-        <option value="all">All</option>
-        <option value="Alive">Alive</option>
-        <option value="Dead">Dead</option>
-        <option value="unknown">Unknown</option>
-      </select>
-      <label className="genderLabel" htmlFor="gender">
-        Gender
-      </label>
-      <select
-        className="genderSelect"
-        name="gender"
-        id="gender"
-        onChange={handleInputChange}
-      >
-        <option value="all">All</option>
-        <option value="Female">Female</option>
-        <option value="Male">Male</option>
-        <option value="unknown">Unknown</option>
-      </select>
+      <div className="selectWrapper">
+        <label className="label" htmlFor="status">
+          Status
+        </label>
+        <select
+          className="select"
+          name="status"
+          id="status"
+          onChange={handleInputChange}
+        >
+          <option value="all">All</option>
+          <option value="Alive">Alive</option>
+          <option value="Dead">Dead</option>
+          <option value="unknown">Unknown</option>
+        </select>
+        <label className="label" htmlFor="gender">
+          Gender
+        </label>
+        <select
+          className="select"
+          name="gender"
+          id="gender"
+          onChange={handleInputChange}
+        >
+          <option value="all">All</option>
+          <option value="Female">Female</option>
+          <option value="Male">Male</option>
+          <option value="unknown">Unknown</option>
+        </select>
+      </div>
     </form>
   );
 };
