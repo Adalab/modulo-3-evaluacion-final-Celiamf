@@ -1,10 +1,18 @@
 import "../stylesheets/_ErrorMessage.scss";
+import noResultImg from "../images/no_results_img.png";
 
 const SearchError = () => {
   return (
-    <p className="errorMessage">
-      Sorry, your search did not match any character in our list.
-    </p>
+    <>
+      <img
+        src={noResultImg}
+        alt="Rick and Morty looking anxious"
+        className="errorImg"
+      />
+      <p className="noResultMessage">
+        Sorry, your search did not match any character in our list.
+      </p>
+    </>
   );
 };
 
