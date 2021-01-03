@@ -6,10 +6,10 @@ const BackToListLink = () => {
     <Link
       to="/"
       className="detailLink"
-      aria-label="Go back to the list"
-      title="Go back to the list"
+      aria-label="Go back to list"
+      title="Go back to list"
     >
-      &lt; Back to the list
+      &lt; Back to list
     </Link>
   );
 };

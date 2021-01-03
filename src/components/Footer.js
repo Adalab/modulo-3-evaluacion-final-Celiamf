@@ -30,19 +30,6 @@ const Footer = () => {
           Celia
         </a>
       </small>
-      <a
-        href="https://beta.adalab.es/project-promo-k-modulo-1-team-3/"
-        target="_blank"
-        rel="noreferrer"
-        title="Go to Las Chicas del Coding website"
-        aria-label="Go to Las Chicas del Coding website"
-      >
-        <img
-          src={logo}
-          alt="Las Chicas del Coding"
-          title="Las Chicas del Coding"
-        />
-      </a>
     </div>
   );
 };

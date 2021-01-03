@@ -36,6 +36,20 @@ const Filter = (props) => {
         <option value="Dead">Dead</option>
         <option value="unknown">Unknown</option>
       </select>
+      <label className="genderLabel" htmlFor="gender">
+        Gender
+      </label>
+      <select
+        className="genderSelect"
+        name="gender"
+        id="gender"
+        onChange={handleInputChange}
+      >
+        <option value="all">All</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="unknown">Unknown</option>
+      </select>
     </form>
   );
 };

@@ -16,6 +16,7 @@ const CharacterList = (props) => {
           img={char.img}
           species={char.species}
           status={char.status}
+          gender={char.gender}
         />
       );
     });

@@ -6,7 +6,7 @@
 
 ¡Hello, visitor!
 
-Welcome to the **Rick & Morthy Search App**. This responsive search app will allows you to find info about some of your favorite characters from the Rick & Morty show. It was developed under the Adalab Bootcamp Module 3 on **React** (Kizzy Promotion, sept-dec 2020).
+Welcome to the **Rick & Morthy Search App**. This responsive search app will allow you to find info about some of your favorite characters from the Rick & Morty show. It was developed under the Adalab Bootcamp Module 3 on **React** (Kizzy Promotion, sept-dec 2020).
 Click [here](https://celiamf.github.io/rick-and-morty-search-react-app/#/) to start using the app!
 
 ## Developing

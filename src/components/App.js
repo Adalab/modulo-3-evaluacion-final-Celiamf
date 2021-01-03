@@ -12,6 +12,7 @@ function App() {
   const [chars, setChars] = useState([]);
   const [nameFilter, setNameFilter] = useState("");
   const [statusFilter, setStatusFilter] = useState("all");
+  const [genderFilter, setGenderFilter] = useState("all");
 
   useEffect(() => {
     getDataFromAPI().then((data) => {
@@ -34,11 +35,13 @@ function App() {
   const handleFilter = (filterData) => {
     if (filterData.key === "searchBox") setNameFilter(filterData.value);
     else if (filterData.key === "status") setStatusFilter(filterData.value);
+    else if (filterData.key === "gender") setGenderFilter(filterData.value);
   };
 
   const renderUnfilteredList = () => {
     setNameFilter("");
     setStatusFilter("all");
+    setGenderFilter("all");
   };
 
   const filteredChars = chars
@@ -48,6 +51,10 @@ function App() {
     .filter((char) => {
       if (statusFilter === "all") return char;
       else return char.status === statusFilter;
+    })
+    .filter((char) => {
+      if (genderFilter === "all") return char;
+      else return char.gender === genderFilter;
     });
 
   const renderCharDetail = (props) => {
