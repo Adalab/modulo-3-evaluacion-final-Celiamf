@@ -2,7 +2,7 @@
 
 > By Celia, [@adalab](https://github.com/Adalab), Promo Kizzy 2020
 
-![alt text](https://github.com/Celiamf/rick-and-morty-search-react-app/blob/master/src/images/Search_App_Screenshot.png?raw=true)
+![alt text](https://github.com/Celiamf/rick-and-morty-search-react-app/blob/master/src/images/app_screenshot.png?raw=true)
 
 ¡Hello, visitor!
 
