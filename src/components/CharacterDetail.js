@@ -37,7 +37,7 @@ const CharacterDetail = (props) => {
               {props.char.origin}
             </p>
             <p className="detail__info__attribute">
-              <span className="detail__info__title">No. of pisodes: </span>{" "}
+              <span className="detail__info__title">No. of episodes: </span>{" "}
               {props.char.episodes}
             </p>
           </div>
