@@ -21,6 +21,7 @@ const Filter = (props) => {
         className="searchBox"
         placeholder="Type a character's name"
         onChange={handleInputChange}
+        autoFocus
       />
       <div className="selectWrapper">
         <label className="label" htmlFor="status">
