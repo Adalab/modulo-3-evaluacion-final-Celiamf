@@ -1,5 +1,4 @@
 import "../stylesheets/_Footer.scss";
-import logo from "../images/logochicas.png";
 
 const Footer = () => {
   return (
