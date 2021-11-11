@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import "../stylesheets/_CharacterList.scss";
 
 const CharacterList = (props) => {
+  console.log(props);
   if (props.filteredChars.length === 0) {
     return <SearchError />;
   } else {
